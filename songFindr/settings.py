@@ -24,9 +24,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-bgsov-wcih=c!on6s1+72x-si=!soo))ud39l*=pve^1mbtgig'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'warm-island-37815.herokuapp.com',
+    'localhost',
+    '127.0.0.1']
 
 
 # Application definition
