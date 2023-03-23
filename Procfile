@@ -1,1 +1,1 @@
-web: songFindr.wsgi
+web: gunicorn songFindr.wsgi:application

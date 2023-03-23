@@ -18,7 +18,7 @@ termcolor==1.1.0
 urllib3==1.26.15
 wcwidth==0.1.9
 django
-gunicorn
+gunicorn==20.1.0
 dj-database-url
 whitenoise
 psycopg2-binary
