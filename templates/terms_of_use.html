@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+    <body>
+    <div class="search-container">
+        <a href="{% url 'index' %}" class="songfindr-link">
+            <h1><span class="search-title">SongFindr</span> <i class="fas fa-headphones headphone-icon"></i></h1>
+        </a>
+
+        <h1>Terms of Use</h1>
+        <div class="terms">
+            <p>
+                These Terms of Use ("Terms") govern your use of the SongFindr website ("Website"). By accessing and
+                using the Website, you agree to be bound by these Terms.
+            </p>
+            <p>
+                The content provided on this Website is for informational purposes only. SongFindr is not responsible
+                for the accuracy, completeness, or reliability of any information obtained through the Website.
+            </p>
+            <p>
+                The Website may contain links to third-party websites. SongFindr is not responsible for the content or
+                privacy practices of any third-party websites.
+            </p>
+            <p>
+                SongFindr reserves the right to modify or discontinue the Website at any time without notice.
+            </p>
+            <p>
+                By using the Website, you agree to indemnify and hold harmless SongFindr and its affiliates from any
+                claim, demand, loss, or damage, including reasonable attorneys' fees, arising out of your use of the
+                Website or your violation of these Terms.
+            </p>
+            <p>
+                These Terms shall be governed by the laws of the jurisdiction in which you reside. Any disputes arising
+                out of or related to these Terms or your use of the Website shall be resolved through binding
+                arbitration.
+            </p>
+        </div>
+        <body/>
+    </div>
+
+{% endblock content %}

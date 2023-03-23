@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+    <body>
+    <div class="search-container">
+        <a href="{% url 'index' %}" class="songfindr-link">
+            <h1><span class="search-title">SongFindr</span> <i class="fas fa-headphones headphone-icon"></i></h1>
+        </a>
+
+        {% if songs %}
+            <div class="song-list">
+                <h2>Here are the results for '{{ form.word.value|default:'' }}':</h2>
+
+                {% for title, artist in songs %}
+                    <div class="song-result">
+                        <span class="song-result-inner">{{ title }} - <i>{{ artist }}</i></span>
+                        <button class="youtube-search btn btn-danger btn-round" style="float: right;"
+                            data-search="{{ title }} - {{ artist }}">YouTube <i class="fa fa-youtube"></i></button>
+                    </div>
+                {% endfor %}
+
+                <button class="new-search btn btn-lightblue btn-round"
+                        onclick="window.location.href='{% url 'index' %}'">New Search
+                </button>
+
+            </div>
+
+        {% elif nothing_found %}
+            <div class="alert alert-warning" role="alert">
+                Nothing found.
+
+            </div>
+            <button class="new-search btn btn-lightblue btn-round" onclick="window.location.href='{% url 'index' %}'">
+                New Search
+            </button>
+        {% endif %}
+    </div>
+
+    </body>
+    </html>
+{% endblock content %}
