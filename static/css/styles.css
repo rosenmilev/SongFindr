@@ -176,5 +176,10 @@ footer {
     width: 100%;
 }
 
+@media (max-width: 767px) {
+    .search-title {
+        font-size: 32px;
+    }
+}
 
 

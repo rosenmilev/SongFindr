@@ -14,7 +14,7 @@
                     <div class="song-result">
                         <span class="song-result-inner">{{ title }} - <i>{{ artist }}</i></span>
                         <button class="youtube-search btn btn-danger btn-round" style="float: right;"
-                            data-search="{{ title }} - {{ artist }}">YouTube <i class="fa fa-youtube"></i></button>
+                            data-search="{{ title|striptags }}">YouTube <i class="fa fa-youtube"></i></button>
                     </div>
                 {% endfor %}
 

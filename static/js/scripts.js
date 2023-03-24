@@ -18,7 +18,7 @@ $(document).ready(function () {
     fadeInResults();
 
     $(".youtube-search").on("click", function () {
-        const searchQuery = $(this).data("search");
+        const searchQuery = $(this).data("search").replace(/<.*?>/g, '');
         const url = `https://www.youtube.com/results?search_query=${encodeURIComponent(searchQuery)}`;
         window.open(url, "_blank");
     });
