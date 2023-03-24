@@ -187,4 +187,9 @@ footer {
     }
 }
 
-
+@media (max-width: 767px) {
+  .search-container {
+    width: auto;
+    padding: 30px;
+  }
+}
