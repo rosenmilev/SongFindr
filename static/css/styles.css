@@ -4,6 +4,7 @@ body {
     background-image: url("https://images.unsplash.com/photo-1501594907352-04cda38ebc29");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center; /* Add this line */
     background-attachment: fixed;
 }
 
@@ -20,6 +21,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    box-sizing: border-box;
 }
 
 .search-title {
@@ -185,11 +187,10 @@ footer {
     .search-title {
         font-size: 32px;
     }
-}
 
-@media (max-width: 767px) {
-  .search-container {
-    width: auto;
-    padding: 30px;
-  }
+    .search-container {
+        width: auto;
+        padding: 30px;
+        margin: 0 20px; /* Add this line */
+    }
 }
