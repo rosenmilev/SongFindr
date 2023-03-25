@@ -54,6 +54,7 @@ body {
     display: inline-block;
     width: 100%;
     max-width: 300px;
+    margin: 0 auto;
 }
 
 .search-box input {
@@ -202,11 +203,23 @@ footer {
 }
 
 @media (max-width: 767px) {
+    .search-title {
+        font-size: 32px;
+    }
+
+    .headphone-icon {
+        display: block;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
     .search-container {
-        padding: 20px;
+        width: auto;
+        padding: 30px;
         margin: 0 20px;
     }
-}
-.search-box input {
-    max-width: 90%;
+
+    .search-box input {
+        max-width: 100%;
+    }
 }
