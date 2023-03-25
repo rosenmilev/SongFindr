@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-    <body>
+
     <div class="search-container">
         <h1><span class="search-title">SongFindr</span> <i class="fas fa-headphones headphone-icon"></i></h1>
 
@@ -17,12 +17,21 @@
 
         <div class="description-box">
             <p>Discover the songs you love, powered by the words that inspire you. Just type in a word or phrase, and
-                our app will find songs with a title that match. It's never been easier to find the perfect soundtrack
-                for your life!</p>
+                our app will find songs with the lyrics that match your query. Whether you're looking for a specific song or just want to find music that resonates with your mood, SongFindr is here to help.</p>
         </div>
-
     </div>
+{% if results %}
+    <div class="results-container">
+        {% for result in results %}
+            <div class="song-result fade-in visible">
+                <div class="song-result-inner">
+                    <p><span class="song-title">{{ result.title }}</span> by <span class="song-artist">{{ result.artist }}</span></p>
+                    <p>Lyrics containing: <span class="highlight">{{ query }}</span></p>
+                </div>
+                <a href="https://www.youtube.com/results?search_query={{ result.title|urlencode }}+{{ result.artist|urlencode }}" target="_blank" class="youtube-search">YouTube</a>
+            </div>
+        {% endfor %}
+    </div>
+{% endif %}
 
-    </body>
-    </html>
-{% endblock content %}
+{% endblock %}

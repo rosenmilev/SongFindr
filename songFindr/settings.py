@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-bgsov-wcih=c!on6s1+72x-si=!soo))ud39l*=pve^1mbtgig'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     'warm-island-37815.herokuapp.com',
@@ -84,7 +84,6 @@ WSGI_APPLICATION = 'songFindr.wsgi.application'
 DATABASES = {
     'default': dj_database_url.config(default='sqlite:///db.sqlite3')
     }
-
 
 
 # Password validation
