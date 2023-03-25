@@ -14,7 +14,6 @@ body {
     overflow: hidden;
 }
 
-
 .search-container {
     display: flex;
     flex-direction: column;
@@ -56,6 +55,7 @@ body {
     width: 100%;
     max-width: 300px;
     margin-bottom: 30px;
+    box-sizing: border-box;
 }
 
 .search-box input {
@@ -67,7 +67,9 @@ body {
     font-size: 18px;
     background: linear-gradient(120deg, #eee, #eee);
     color: black;
+    box-sizing: border-box;
 }
+
 .search-box button {
     position: absolute;
     top: 0;
@@ -119,7 +121,7 @@ body {
 }
 
 .btn-primary {
-    background-color: #eee;
+    background-color: #eee
     border-color: #eee;
 }
 
@@ -152,9 +154,21 @@ body {
 
     .search-title {
         font-size: 32px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .headphone-icon {
+        display: block;
+        margin: 0 auto;
+        margin-top: 10px;
     }
 
     .search-box {
         width: 100%;
+    }
+
+    .description-box {
+        text-align: justify;
     }
 }
