@@ -23,14 +23,14 @@ $(document).ready(function () {
         window.open(url, "_blank");
     });
 
-    // Hide the "New search" button by default
+
     $("#new-search").hide();
 
-    // Show the "New search" button when the search button is clicked
+
     $("form.search-box").on("submit", function (event) {
         event.preventDefault();
         $("#new-search").show();
-        // The code below simulates the submission of the form and reloads the page with the search results
+
         this.submit();
     });
 

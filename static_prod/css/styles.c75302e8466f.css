@@ -93,8 +93,8 @@ body {
 }
 .song-result-inner {
     display: inline-block;
-    flex-grow: 1; /* Add this line to allow the inner container to grow within the parent container */
-    margin-right: 10px; /* Add this line to add some space between the text and the button */
+    flex-grow: 1;
+    margin-right: 10px;
 }
 
 .highlight {
@@ -115,8 +115,8 @@ body {
     padding: 4px 8px;
     width: 80px;
     height: 30px;
-    display: flex; /* Add this line */
-    align-items: center; /* Add this line */
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
 

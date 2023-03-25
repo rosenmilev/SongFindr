@@ -23,21 +23,9 @@ $(document).ready(function () {
         window.open(url, "_blank");
     });
 
-
-    $("#new-search").hide();
-
-
-    $("form.search-box").on("submit", function (event) {
-        event.preventDefault();
-        $("#new-search").show();
-
         this.submit();
     });
 
-    $("#new-search").on("click", function () {
-        location.reload();
-    });
-});
 document.querySelector('.search-title').addEventListener('click', function () {
     window.location.reload();
 });

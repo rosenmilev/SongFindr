@@ -4,7 +4,7 @@ body {
     background-image: url("https://images.unsplash.com/photo-1501594907352-04cda38ebc29");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center; /* Add this line */
+    background-position: center center;
     background-attachment: fixed;
 }
 
@@ -85,6 +85,7 @@ body {
     margin-top: 30px;
 }
 
+
 .song-result {
     padding: 5px;
     border: 1px solid #eee;
@@ -99,8 +100,8 @@ body {
 }
 .song-result-inner {
     display: inline-block;
-    flex-grow: 1; /* Add this line to allow the inner container to grow within the parent container */
-    margin-right: 10px; /* Add this line to add some space between the text and the button */
+    flex-grow: 1;
+    margin-right: 10px; /
 }
 
 .highlight {
@@ -121,8 +122,8 @@ body {
     padding: 4px 8px;
     width: 80px;
     height: 30px;
-    display: flex; /* Add this line */
-    align-items: center; /* Add this line */
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
 
@@ -190,11 +191,10 @@ footer {
     .search-container {
         width: auto;
         padding: 30px;
-        margin: 0 20px; /* Add this line */
+        margin: 0 20px;
     }
 }
 
 .search-box input {
-    /* ... existing styles ... */
-    max-width: 90%; /* Add this line */
+    max-width: 90%;
 }
