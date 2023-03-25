@@ -8,10 +8,9 @@ body {
     height: 100%;
     margin: 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
     min-height: 100vh;
-    overflow: hidden;
 }
 
 .search-container {
@@ -19,7 +18,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
     width: 100%;
     max-width: 600px;
     padding: 30px;
@@ -121,7 +119,7 @@ body {
 }
 
 .btn-primary {
-    background-color: #eee
+    background-color: #eee;
     border-color: #eee;
 }
 
@@ -137,12 +135,9 @@ body {
 }
 
 .footer {
-    position: absolute;
-    bottom: 0;
     width: 100%;
-    height: 30px;
-    line-height: 30px;
     text-align: center;
+    padding: 10px 0;
 }
 
 @media (max-width: 767px) {
