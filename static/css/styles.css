@@ -219,7 +219,11 @@ footer {
         margin: 0 20px;
     }
 
-    .search-box input {
+    .search-box {
         max-width: 100%;
+    }
+
+    .search-box input {
+        max-width: calc(100% - 50px);
     }
 }
