@@ -11,7 +11,7 @@ body {
     align-items: center;
     min-height: 100vh;
     min-width: 100vw;
-    overflow: hidden;
+    overflow-x: hidden;
     overflow-y: auto;
 }
 
@@ -150,12 +150,28 @@ body {
     padding: 10px 15px;
     text-decoration: none;
     margin-top: 5px;
+    width: 100px;
+    text-align: center;
+    white-space: nowrap;
 }
 
 .footer {
     width: 100%;
     text-align: center;
     padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+}
+
+.new-search {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 10px 15px;
+    text-decoration: none;
+    margin-top: 5px;
 }
 
 @media (max-width: 767px) {
