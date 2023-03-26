@@ -21,12 +21,13 @@
     </script>
 </head>
 <body>
-{% block content %}
-{% endblock content %}
-<footer class="text-center">
-
-    <p>&copy; 2023 SongFindr. All rights reserved. | <a href="{% url 'terms_of_use' %}">Terms of Use</a>
-    </p>
-</footer>
+    <div class="content-wrapper">
+        {% block content %}
+        {% endblock content %}
+        <footer class="text-center">
+            <p>&copy; 2023 SongFindr. All rights reserved. | <a href="{% url 'terms_of_use' %}">Terms of Use</a>
+            </p>
+        </footer>
+    </div>
 </body>
 </html>
