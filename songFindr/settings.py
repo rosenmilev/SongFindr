@@ -31,8 +31,8 @@ ALLOWED_HOSTS = [
     'warm-island-37815.herokuapp.com',
     'localhost',
     '127.0.0.1',
-    'www.songfifndr.org'
-    'sonfindr.org']
+    'www.songfindr.org',
+    'songfindr.org']
 
 
 # Application definition
